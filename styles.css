@@ -1,0 +1,16 @@
+:root { --bg:#0b0b0b; --card:#161616; --muted:#999; --fg:#fff; --accent:#00a6ce; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:system-ui,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--fg); }
+.container { max-width:980px; margin:40px auto; padding:0 16px; }
+h1,h2 { margin:8px 0 16px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+.card { background:var(--card); border:1px solid #222; padding:14px; border-radius:12px; }
+.card h3 { margin:0 0 6px; }
+.price { color:var(--accent); font-weight:600; }
+button { background:var(--accent); color:#000; border:none; padding:8px 12px; border-radius:10px; cursor:pointer; font-weight:600; }
+button.ghost { background:#202020; color:#eee; }
+.cart table { width:100%; border-collapse:collapse; background:var(--card); border-radius:12px; overflow:hidden; }
+th, td { padding:10px; border-bottom:1px solid #222; text-align:left; }
+tfoot td { border-bottom:none; }
+.actions button { margin-right:6px; }
+.muted { color:var(--muted); font-size:12px; }
