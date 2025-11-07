@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OOJS Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>OOJS Shopping Cart</h1>
+
+    <section>
+      <h2>Products</h2>
+      <div id="products" class="grid"></div>
+    </section>
+
+    <section>
+      <h2>Cart</h2>
+      <div class="cart">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th><th>Product</th><th>Qty</th><th>Unit</th><th>Total</th><th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2"><strong>Totals</strong></td>
+              <td id="cart-items">0</td>
+              <td></td>
+              <td id="cart-amount">0</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
